@@ -21,7 +21,7 @@ EOT
         v.membership_type == null || (contains(["all", "immediate"], v.membership_type))
       )
     ])
-    error_message = "must be one of: all, immediate"
+    error_message = "must be one of: \"all\", \"immediate\""
   }
   validation {
     condition = alltrue([
